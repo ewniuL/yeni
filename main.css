@@ -1,0 +1,104 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
+}
+
+/* Ana gövde ayarları */
+.main {
+  width: 100%;  /* Genişlik ayarı */
+  background-image: url(./images/arkaplan.jpg);   /* Arka plana resim ekledik*/
+  background-size: cover; /* Resmin tam sayfayı kaplamasını sağlar */
+  background-attachment: fixed;  /* Arka planın sabit kalmasını sağlar*/
+}
+
+/* Navbar ayarları */
+ul {
+  list-style-type: none; /* Liste ögelerinin başında gelen madde işaretlerini kaldırır*/
+  overflow: hidden; /* Bir içerik dışarı taşarsa, bu taşan kısmı gizlemek için kullanılır.*/
+  position: fixed; /* Navbar'ın ( Anasayfa, Tarihçe ...) sayfayı aşağıya indirdiğimizde sabit kalmasını sağlar*/ 
+  top: 0; /* Navbar'ı üstte olacak şekilde ayarlar */
+  width: 100%; /* Genişliği ayarlar*/
+  text-align: center; /* Yazıyı ortalamayı sağlar*/
+  z-index: 2; /* Elementin üstte veya altta görüneceğini kontrol eder. Katman sırasını düzenler */
+ 
+}
+
+li {
+  display: inline-block;
+  height: 60px; /* Uzunluğu ayarlar*/
+}
+
+li a {
+  display: inline-block; 
+  color: white;
+  padding: 20px 30px; /* İç boşluğu ayarlar*/
+  text-decoration: none; /* A elementinin altındaki mavi çizgiyi kaldırır*/
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Yazı stilini yani Font türünü ayarlar*/
+  font-size: 25px; /* Yazının büyüklüğünü ayarlar*/
+}
+
+li a:hover {
+  background-color: rgb(167, 122, 167); /* Navbar'a mouse ile üzerine gelindiğinde üzerinde çıkan rengi düzenler*/
+}
+
+/* Navbar altındaki çizgi */
+.navbar-hr {
+
+  border: 1px solid white;  /* Çerçeve kalınlığını, şeklini, rengini değiştirilmesini sağlar*/
+  width: 100%; /* Genişliğini sayfayı kaplayacak şekilde ayarlar*/
+  position: fixed; /* Navbar'ın altındaki Çizginin sabit kalmasını sağlar*/
+  top: 60px; /* Navbar'ın konumunu ayarlar*/
+ 
+}
+
+/* İçerik alanı */
+.content {
+  padding: 2px; /* İç boşluğunu ayarlar*/
+  margin-top: 110px; /* Dış boşluğunu ayarlar*/
+  height: 890px; /* Yüksekliğini ayarlar*/
+  width: 100%; /* Genişliğini ayarlar*/
+  font-family: 'Muli', sans-serif; /* Yazı stilini yani Font türünü ayarlar*/
+  color: rgb(221, 205, 205);
+}
+
+.baslik {
+  font-size: 60px; /* Font büyüklüğünü ayarlar*/
+  text-align: center; /* Yazıyı ortalar*/
+  color: gainsboro; /* Renk */
+}
+
+.paragraf {
+  font-size: 22px; /* Font büyüklüğünü ayarlar*/
+  text-align: center; /* Yazıyı ortalar*/
+  padding: 10px; /* İç boşluğu düzenler*/
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Yazı stilini yani Font türünü ayarlar*/
+}
+
+.bayrak a img  {
+  width: 40px; /* Genişliği ayarlar*/
+  vertical-align: middle; /* Japonya bayrağını navbar'a ortalar*/
+}
+
+.bayrak-logo img {
+  padding-top: 200px; /* İç boşluğa üstten 200px değer verir*/
+  width: 300px; /* Genişlik değeri*/
+  float: right; /* Tarihçe bölümündeki Bayrak resmini sağa kaydırır */
+}
+
+.paragraf2 {
+  padding-top: 200px;  /* Üstten iç boşluk verir*/
+  padding-left: 50px; /* Soldan iç boşluk verir*/
+  width: 920px; /* Genişlik*/
+  font-size: 15px; /* Font büyüklüğünü düzenler*/
+  text-align: center; /* Yazıyı ortalar*/
+}
+
+.tarihcebg {
+  background-image: url(./images/tarihce-bg.jpg); /* Tarihçe sayfasının arkaplan rengini düzenler*/
+  background-size: cover; /* Resmin tam sayfayı kaplamasını sağlar */
+  background-attachment: fixed;  /* Arka planın sabit kalmasını sağlar*/
+  width: 100%;
+
+}
